@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casos - Sistema Odonto-Legal</title>
+  <link rel="stylesheet" href="css/styless.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+
+    <section>
+        <div class="imgBx">
+            <img src="imag/login.jpg" alt="Login Imagem" />
+        </div>
+        <div class="contentBx">
+            <div class="form-box">
+                <h2>Odonto-Legal</h2>
+                <form id="loginForm">
+                    <!-- Campo de seleção de cargo -->
+                    <div class="form-group">
+                        <label for="cargo"><span>Cargo</span></label>
+                        <select name="cargo" id="cargo" required>
+                            <option value="">Selecione o cargo</option>
+                            <option value="administrador">Administrador</option>
+                            <option value="perito">Perito</option>
+                            <option value="assistente">Assistente</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <!-- Campo de matrícula -->
+                        <label for="matricula"><span>Matrícula</span></label>
+                        <input type="number" name="matricula" id="matricula" placeholder="Digite sua matrícula"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <!-- Campo de senha -->
+                        <label for="senha"><span>Senha</span></label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Entrar" name="">
+                    </div>
+                    <div class="form-group">
+                        <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+                    </div>
+                    <div id="mensagemErro" style="display: none; color: red;"></div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="js/login.js" defer></script>
+</body>
+
+</html>
